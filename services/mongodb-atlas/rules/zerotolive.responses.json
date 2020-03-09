@@ -1,0 +1,19 @@
+{
+    "id": "5e6673ea2e6039c1c3f0ce54",
+    "database": "zerotolive",
+    "collection": "responses",
+    "roles": [
+        {
+            "name": "owner",
+            "apply_when": {
+                "owner": "%%user.id"
+            },
+            "read": true,
+            "write": true,
+            "insert": true,
+            "delete": true,
+            "additional_fields": {}
+        }
+    ],
+    "schema": {}
+}
