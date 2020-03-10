@@ -7,7 +7,7 @@
     "security": {},
     "hosting": {
         "enabled": true,
-        "app_default_domain": "zerotolive-njchv.mongodbstitch.com"
+        "app_default_domain": "www.zerotolive.com"
     },
     "custom_user_data_config": {
         "enabled": false
