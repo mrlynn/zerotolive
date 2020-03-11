@@ -130,6 +130,20 @@
                             />
                     </div>
                 </div>
+                <div class="row">
+                  <div class="col-md-4 form-group">
+                      <label for="ddl_lat">Your Location - Latitude</label>
+                      <input type="text" id="ddl_lat" name="ddl_lat" value="" class="form-control">
+                  </div>
+                  <div class="col-md-4">
+                      <label for="ddl_lon">Your Location - Longitude</label>
+                      <input type="text" id="ddl_lon" name="ddl_lon" value="" class="form-control">
+                  </div>
+                  <div class="col-md-4">
+                      <input type="geolocation" type="hidden" id="ddl_geolocation" name="ddl_geolocation">
+                      <button type="button" class="btn btn-lg btn-info" onclick="showPosition();">Share Position</button>
+                  </div>
+              </div>
                 <div class="form-row">
                         <label for="txt_addr">Experience with MongoDB:</label>
 
@@ -243,7 +257,15 @@
               obj.postal = $("#txt_postal").val();
               obj.description = $("#txt_description").val();
               obj.exp = $("#select_exp").val();
-    
+              if ($("#ddl_lat").val().length > 0) {
+                  var lat = $("#ddl_lat").val();
+                  var lon = $("#ddl_lon").val();
+                  var location = {};
+                  location.type = "Point";
+                  location.coordinates = [lon, lat];
+                  obj.location = location;
+                  console.log(obj);
+              }
               obj.browser = {};
               obj.browser.ua = navigator.userAgent || undefined;
               obj.browser.lang = navigator.language || undefined;
@@ -274,6 +296,18 @@
               var value = getQueryVariable("utm_source");
               var e = document.getElementById("utm_source");
               e.value = value;
+            }
+            function showPosition() {
+              if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                  var lat = position.coords.latitude;
+                  var lon = position.coords.longitude;
+                  document.getElementById("ddl_lat").value = lat.toFixed(2);
+                  document.getElementById("ddl_lon").value = lon.toFixed(2);
+                });
+              } else {
+                alert("Sorry, your browser does not support HTML5 geolocation.");
+              }
             }
           </script>
   </body>

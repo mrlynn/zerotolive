@@ -6,6 +6,4 @@ source .env
 stitch-cli import \
   --app-id=$STITCH_APP_ID \
   --include-hosting
-  --strategy=merge
-  --include-dependencies
  
