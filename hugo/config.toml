@@ -1,0 +1,46 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Zero to Live"
+themesDir = "themes"
+theme = "hugo-zero-to-live"
+publishDir = "../hosting/files"
+
+[params]
+  google_analytics_id=""
+
+  [params.homepage_meta_tags]
+    meta_description = "Zero to Live is a multipurpose Hugo theme with fullscreen hero images and page sections. It contains content types for a business or portfolio site."
+    meta_og_title = "Zero to Live"
+    meta_og_type = "website"
+    meta_og_url = "https://zerotolive.com"
+    meta_og_image = "https://raw.githubusercontent.com/mrlynn/hugo-zero-to-live/master/images/tn.png"
+    meta_og_description = "Zero to Live is a multipurpose Hugo theme with fullscreen hero images and page sections. It contains content types for a business or portfolio site."
+    meta_twitter_card = "summary"
+    meta_twitter_site = "@zerotolive45"
+    meta_twitter_creator = "@mlynn"
+
+[[menu.main]]
+	name = "Services"
+	url = "/services/"
+    weight = 1
+
+[[menu.main]]
+    name = "Work"
+    url = "/work/"
+    weight = 2
+
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 3
+
+[[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 4
+
+[permalinks]
+  post = "/:year/:month/:day/:slug/"
+  pages = "/:filename/"
+
+

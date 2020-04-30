@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Web Presence",
+    "description": "Build and launch your business web presence.",
+    "image": "features/noun_branding_1885335.svg"
+  },
+  {
+    "title": "Application Development",
+    "description": "Begin building on a scalable, secure and resilient platform.",
+    "image": "features/noun_The Process_1885341.svg"
+  },
+  {
+    "title": "Data Platform",
+    "description": "Launch a secure, scalable data platform as the foundation of your applications.",
+    "image": "features/noun_3d modeling_1885342.svg"
+  }
+]

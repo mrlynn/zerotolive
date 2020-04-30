@@ -7,7 +7,10 @@
     "security": {},
     "hosting": {
         "enabled": true,
-        "app_default_domain": "www.zerotolive.com"
+        "custom_domain": "zerotolive.com",
+        "app_default_domain": "zerotolive-njchv.mongodbstitch.com",
+        "default_error_path": "",
+        "default_error_code": ""
     },
     "custom_user_data_config": {
         "enabled": false

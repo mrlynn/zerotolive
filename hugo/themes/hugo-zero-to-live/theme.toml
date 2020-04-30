@@ -1,0 +1,12 @@
+name = "Hero"
+license = "MIT"
+licenselink = "https://github.com/JugglerX/hugo-hero-theme/blob/master/LICENSE"
+description = "Zero to Live is a fork of the awesome Hugo Hero Theme and is a multipurpose theme with fullscreen hero images and fullwidth sections. It contains content types for a business or portfolio site."
+homepage = "https://github.com/mrlynn/hugo-zero-to-live"
+tags = ["responsive","minimal","clean","company","portfolio","bootstrap","zerotolive"]
+features = ["services","work","fullwidth","hero images"]
+min_version = 0.51
+
+[author]
+  name = "Robert Austin"
+  homepage = "https://www.zerostatic.io"

@@ -1,6 +1,6 @@
 #!/bin/sh
 source .env
-#stitch-cli login --api-key=$STITCH_API_PUBLIC_KEY --private-api-key=$STITCH_API_PRIVATE_KEY
+#stitch-cli login --api-key=$STITCH_API_KEY --private-api-key=$STITCH_PRIVATE_API_KEY
 
 # change the value of --app-id=zerotolive-njchv
 stitch-cli export \
